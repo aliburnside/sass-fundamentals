@@ -3,3 +3,22 @@ body {
     color: #c46;
   }
 }
+
+.btn {
+  padding: 2px 10px;
+  border-radius: 2px;
+  border: 1px solid #c46;
+  &.btn-primary {
+    background-color: #c46;
+    color: #000;
+  }
+  &.btn-secondary {
+    background-color: #edbcc8;
+    color: #000;
+  }
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+//you can remove the .btn and just have &, parent selector once but will mean that it will not be scopped to button.
